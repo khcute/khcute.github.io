@@ -31,10 +31,10 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./.svelte-kit/output
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v1
+      #   with:
+      #     path: ./.svelte-kit/output
 
   deploy:
     runs-on: ubuntu-latest
